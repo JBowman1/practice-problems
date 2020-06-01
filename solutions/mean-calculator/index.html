@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mean Calculator</title>
+</head>
+
+<body>
+  <script>
+    function meanCalculator(numbersArray){
+       var sum = 0;
+       for (var i = 0; i < numbersArray.length; i++){
+          sum += numbersArray[i];
+        }
+      var mean = sum / numbersArray.length;
+      return mean;
+    }
+    console.log("The mean of the array is: " + meanCalculator([10,20,30,40]));
+
+  </script>
+</body>
+
+</html>
