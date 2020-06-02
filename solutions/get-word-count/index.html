@@ -16,6 +16,19 @@
 
     console.log("Hello World has: " + wordCount("hello world") + " words.");
     console.log("My name is Jenna has: " + wordCount("my name is jenna") + " words.");
+
+    function methodless(string) {
+    var words = 1;
+    for (var i = 0; i < string.length; i++){
+      if (string[i] === " ") {
+        words ++;
+        }
+      }
+      return words;
+    }
+
+    console.log("Hello World has: " + methodless("hello world") + " words.");
+    console.log("My name is Jenna has: " + methodless("my name is jenna") + " words.");
   </script>
 </body>
 
