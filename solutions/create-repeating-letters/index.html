@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Repeating Letters</title>
+</head>
+
+<body>
+  <script>
+    function createRepeatingLetters (word, numberOfRepeats){
+      var result = '';
+      for(var i = 0; word.length > i; i++){
+      var letters = word[i];
+      var multiply = letters.repeat(numberOfRepeats);
+      result += multiply;
+      }
+      return result;
+    }
+    console.log("Multiply letters in Jenna by 2: " + createRepeatingLetters("jenna", 2));
+  </script>
+</body>
+
+</html>
