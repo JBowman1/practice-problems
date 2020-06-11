@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Decimal Counter</title>
+</head>
+
+<body>
+  <script>
+    function decimalPlaceCounter(stringNumber){
+      var decimalPlaces = 0;
+      var i = 0;
+      while (i < stringNumber.length){
+        if (stringNumber[i] !== '.'){
+          i++;
+        } else if (stringNumber[i] === '.') {
+          i++;
+          for(current = i; current < stringNumber.length; current++){
+            decimalPlaces++;
+          }
+        }
+      }
+      return decimalPlaces;
+    }
+
+    console.log("The number 1.22222 has " + decimalPlaceCounter('1.22222') + " places after the decimal.");
+
+  </script>
+</body>
+
+</html>
