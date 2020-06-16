@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Coffee Cups</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    //1.Define a variable named coffeeCups which whill store a numeric value of the # of coffee cups purchased.
+    //2.Define a function named freeCoffeeCups which will be prepared tor recieve one argument, the number 'coffeeCups';
+    //3.Within the function create an if/else statement that will check if the number of cups bought is divisible by 6.
+    //4.If true, add 1 cup to the total for every 6 cups bought. Else return original #.
+
+    function freeCoffeeCups(coffeeCups){
+      var remainder = coffeeCups / 6;
+      if (remainder >= 1){
+        console.log('You now have ' + (coffeeCups + Math.floor(remainder)) + ' coffee cups');
+      }else{
+        console.log('No free coffee yet!');
+      }
+    }
+
+    console.log(freeCoffeeCups(5));
+    console.log(freeCoffeeCups(6));
+    console.log(freeCoffeeCups(12));
+
+  </script>
+</body>
+
+</html>
