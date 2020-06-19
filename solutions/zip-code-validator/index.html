@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Code Validator</title>
+</head>
+
+<body>
+  <script>
+    function zipCodeValidator(zipCode){
+      if(zipCode.includes(' ') || zipCode.length !== 5 || isNaN(zipCode) === true){
+        return false;
+      }else{
+        return true;
+      }
+    }
+
+    console.log('zipCodeValidator("21594")', zipCodeValidator("21594"));
+    console.log('zipCodeValidator("3Eds32")', zipCodeValidator("3Eds32"));
+    console.log('zipCodeValidator("9123465")', zipCodeValidator("9123465"));
+
+  </script>
+</body>
+
+</html>
