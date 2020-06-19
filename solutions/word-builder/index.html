@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word-Builder</title>
+</head>
+
+<body>
+  <script>
+    //1. Create function named wordBuilder, and prepare it to recieve one argument, the value of string wordToSpell.
+    //2. Within the function, define a new variable, an empty string named word which will hold characters of wordToSpell.
+    //3. Within the function, define an empty array literal, which will store the character chunks of wordToSpell as it is being built.
+    //4. Create a for loop which will iterate through the charcters of string wordtoSpell, and add each character to the variable word.
+    //5. The variable word will then be pushed into the new array, and the array will be returned out of the function.
+
+    
+    function wordBuilder(wordToSpell) {
+      var word = '';
+      var array = [];
+      for (var i = 0; i < wordToSpell.length; i++) {
+        word += wordToSpell[i];
+        array.push(word);
+      }
+      return array;
+    }
+
+    console.log('wordBuilder("JavaScript")', wordBuilder("JavaScript"));
+    console.log('wordBuilder("Moon")', wordBuilder("Moon"));
+    console.log('wordBuilder("Stars")', wordBuilder("Stars"));
+  </script>
+</body>
+
+</html>
